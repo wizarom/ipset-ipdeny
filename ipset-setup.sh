@@ -8,6 +8,10 @@ IPTABLES="iptables"
 #SETNAME="ipblocks"
 COUNTRYCODE="ccodes.list"
 
+IPLIST="iplist"
+
+
+
 while read CODE
 do
     ipset create $CODE-set hash:net
