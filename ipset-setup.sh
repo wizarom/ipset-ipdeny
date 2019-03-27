@@ -10,7 +10,10 @@ COUNTRYCODE="ccodes.list"
 
 IPLIST="iplist"
 
+command -v ipset >/dev/null 2>&1 || { echo "I require ipset but it not installed.  Aborting." >&2; exit 1; }
 
+# ipset flush
+ipset flush
 
 while read CODE
 do
